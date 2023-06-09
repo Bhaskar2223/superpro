@@ -1,0 +1,15 @@
+version: '3'
+services:
+  boss:
+    image: rahamshaik/boss:latest
+    ports:
+      - "75:80"
+    deploy:
+      replicas: 3
+
+  ram:
+    image: rahamshaik/ram:latest
+    ports:
+      - "76:80"
+    deploy:
+      replicas: 3
